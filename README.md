@@ -55,3 +55,23 @@ int main() {
     CloseWindow();
     return 0;
 }
+
+## Dépendances
+
+RayMap nécessite les bibliothèques suivantes :
+
+- **[Raylib](https://www.raylib.com/)** — rendu graphique 2D/3D  
+- **[nlohmann/json](https://github.com/nlohmann/json)** — parsing des fichiers JSON exportés par Tiled  
+- **[TinyXML2](https://github.com/leethomason/tinyxml2)** — lecture des fichiers `.tsx` des tilesets  
+- Un compilateur C++ compatible C++17 (g++, clang++, MSVC)
+
+Assurez-vous que Raylib, TinyXML2 et nlohmann/json sont correctement installés sur votre système.
+
+---
+
+## Compilation
+
+Commande standard pour compiler un programme utilisant RayMap :
+
+```bash
+g++ main.cpp -o game -I include -ltinyxml2 $(pkg-config --cflags --libs raylib)
