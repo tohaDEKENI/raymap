@@ -72,6 +72,4 @@ Assurez-vous que Raylib, TinyXML2 et nlohmann/json sont correctement installés 
 ## Compilation
 
 Commande standard pour compiler un programme utilisant RayMap :
-
-```bash
 g++ main.cpp -o game -I include -ltinyxml2 $(pkg-config --cflags --libs raylib)
